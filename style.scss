@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "General Sans Medium";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+
+    #hero {
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        color: #fff;
+
+        nav {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 20px 40px;
+            justify-content: space-between;
+
+            a {
+                text-decoration: none;
+                font-size: 1.3em;
+                color: #fff;
+            }
+
+            h3 {
+                cursor: pointer;
+            }
+        }
+
+        #heading {
+            margin-top: 90px;
+
+            h1 {
+                font-size: 10vw;
+                text-transform: uppercase;
+                // font-weight: 900;
+                line-height: 1;
+                opacity: 0.6;
+                margin-left: 35px;
+            }
+
+            .text {
+                width: fit-content;
+
+                h1 {
+                    margin-left: 230px;
+                }
+
+                h5 {
+                    text-align: right;
+                    font-size: 1em;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        #heading-2 {
+            margin-top: 100px;
+            padding-right: 50px;
+
+            h5 {
+                text-align: right;
+                text-transform: uppercase;
+                margin-top: 0.5vw;
+                font-size: 0.9vw;
+                // letter-spacing: -1px;
+            }
+        }
+
+        #hero-footer {
+            position: absolute;
+            bottom: 3%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 2vw;
+
+            a {
+                color: #fff;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+
+            .text-3 {
+                display: flex;
+                gap: 5px;
+
+                .circle {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 25px;
+                    height: 25px;
+                    background-color: #888;
+                    border-radius: 50%;
+                    cursor: pointer;
+
+                    i {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    #section-2 {
+        width: 100%;
+        // height: 100vh;
+        background-color: black;
+        padding-top: 150px;
+        padding-right: 10vw;
+        padding-left: 2.5vw;
+        color: white;
+
+        .elem {
+            width: 100%;
+            border-top: 1px solid #888;
+            padding: 4vw 3vw;
+            padding-right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+
+            img {
+                position: absolute;
+                z-index: 999;
+                height: 140%;
+                display: none;
+            }
+
+            h1 {
+                text-transform: uppercase;
+                font-size: 8vw;
+            }
+
+            h5 {
+                font-size: 1em;
+            }
+        }
+
+        .elem3 {
+            border-bottom: 1px solid #888;
+        }
+
+        .button {
+            // background-color: antiquewhite;
+            padding-bottom: 8vw;
+
+            button {
+                padding: 6px 25px;
+                border: none;
+                border-radius: 20px;
+                background-color: transparent;
+                border: 1px solid #fff;
+                color: white;
+                font-size: 0.8vw;
+                cursor: pointer;
+            }
+        }
+    }
+
+    #section-3 {
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+
+        .marquee {
+            border-top: 2px solid #888;
+            border-bottom: 2px solid #888;
+            width: 100%;
+            overflow: hidden;
+
+            .marquee-track {
+                animation: scroll-left 15s linear infinite;
+                display: flex;
+                gap: 5vw;
+                white-space: nowrap;
+                img {
+                    height: 60px;
+                    margin: 2.5vw 2vw;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}

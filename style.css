@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "General Sans Medium";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+}
+#main #hero {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: #fff;
+}
+#main #hero nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  justify-content: space-between;
+}
+#main #hero nav a {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: #fff;
+}
+#main #hero nav h3 {
+  cursor: pointer;
+}
+#main #hero #heading {
+  margin-top: 90px;
+}
+#main #hero #heading h1 {
+  font-size: 10vw;
+  text-transform: uppercase;
+  line-height: 1;
+  opacity: 0.6;
+  margin-left: 35px;
+}
+#main #hero #heading .text {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#main #hero #heading .text h1 {
+  margin-left: 230px;
+}
+#main #hero #heading .text h5 {
+  text-align: right;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+#main #hero #heading-2 {
+  margin-top: 100px;
+  padding-right: 50px;
+}
+#main #hero #heading-2 h5 {
+  text-align: right;
+  text-transform: uppercase;
+  margin-top: 0.5vw;
+  font-size: 0.9vw;
+}
+#main #hero #hero-footer {
+  position: absolute;
+  bottom: 3%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw;
+}
+#main #hero #hero-footer a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#main #hero #hero-footer .text-3 {
+  display: flex;
+  gap: 5px;
+}
+#main #hero #hero-footer .text-3 .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  background-color: #888;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#main #hero #hero-footer .text-3 .circle i {
+  color: black;
+}
+#main #section-2 {
+  width: 100%;
+  background-color: black;
+  padding-top: 150px;
+  padding-right: 10vw;
+  padding-left: 2.5vw;
+  color: white;
+}
+#main #section-2 .elem {
+  width: 100%;
+  border-top: 1px solid #888;
+  padding: 4vw 3vw;
+  padding-right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+#main #section-2 .elem img {
+  position: absolute;
+  z-index: 999;
+  height: 140%;
+  display: none;
+}
+#main #section-2 .elem h1 {
+  text-transform: uppercase;
+  font-size: 8vw;
+}
+#main #section-2 .elem h5 {
+  font-size: 1em;
+}
+#main #section-2 .elem3 {
+  border-bottom: 1px solid #888;
+}
+#main #section-2 .button {
+  padding-bottom: 8vw;
+}
+#main #section-2 .button button {
+  padding: 6px 25px;
+  border: none;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: white;
+  font-size: 0.8vw;
+  cursor: pointer;
+}
+#main #section-3 {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+#main #section-3 .marquee {
+  border-top: 2px solid #888;
+  border-bottom: 2px solid #888;
+  width: 100%;
+  overflow: hidden;
+}
+#main #section-3 .marquee .marquee-track {
+  animation: scroll-left 15s linear infinite;
+  display: flex;
+  gap: 5vw;
+  white-space: nowrap;
+}
+#main #section-3 .marquee .marquee-track img {
+  height: 60px;
+  margin: 2.5vw 2vw;
+  vertical-align: middle;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}/*# sourceMappingURL=style.css.map */
