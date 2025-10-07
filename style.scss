@@ -11,15 +11,16 @@ body {
     height: 100%;
 }
 
-#cursor-circle{
-    width: 80px;
-    height: 80px;
+#cursorcircle{
+    width: 15px;
+    height: 15px;
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
-    z-index: 9999; 
-    
+    z-index: 99999;  
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
 }
+
 #main {
     width: 100%;
     background-color: black;
@@ -51,11 +52,22 @@ body {
 
         #heading {
             margin-top: 90px;
+            .bounding{
+                width: fit-content;
+                overflow: hidden;
+                h1,h5{
+                    transform: translateY(100%);
+                }
+                h5 {
+                    text-align: right !important;
+                    font-size: 1em;
+                    text-transform: uppercase;
+                }
+            }
 
             h1 {
                 font-size: 10vw;
                 text-transform: uppercase;
-                // font-weight: 900;
                 line-height: 1;
                 opacity: 0.6;
                 margin-left: 35px;
@@ -63,23 +75,22 @@ body {
 
             .text {
                 width: fit-content;
+                display: flex;
+                align-items: end;
+                flex-direction: column;
 
                 h1 {
                     margin-left: 230px;
-                }
-
-                h5 {
-                    text-align: right;
-                    font-size: 1em;
-                    text-transform: uppercase;
                 }
             }
         }
 
         #heading-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
             margin-top: 100px;
             padding-right: 50px;
-
             h5 {
                 text-align: right;
                 text-transform: uppercase;
